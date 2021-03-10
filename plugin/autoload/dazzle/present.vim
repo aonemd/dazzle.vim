@@ -6,6 +6,8 @@ function! dazzle#present#start() abort
   nnoremap <buffer> <Right> :n<cr>
   nnoremap <buffer> <Left> :N<cr>
 
+  nnoremap Q !!$SHELL<cr>
+
   if executable('figlet')
     nnoremap <leader>t :.!figlet<cr>
   endif

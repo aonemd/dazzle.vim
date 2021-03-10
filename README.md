@@ -20,12 +20,12 @@ Make dazzling presentations without leaving your best editor, Vim.
     [Vundle](https://github.com/gmarik/Vundle.vim), or
     [Pathogen](https://github.com/tpope/vim-pathogen).
 2. Call `Dazzle` command for your presentation files only:
+    ```viml
+    " use dazzle for .pres files
+    autocmd BufNewFile,BufRead *.pres :Dazzle
+    ```
 3. Open your presentations: `vim *.pres`
 4. Zoom-in on your terminal and dazzle everyone!
-  ```viml
-  " use dazzle for .pres files
-  autocmd BufNewFile,BufRead *.pres :Dazzle
-  ```
 
 ### Features and Maps
 

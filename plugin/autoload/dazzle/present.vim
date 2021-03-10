@@ -1,5 +1,5 @@
 function! dazzle#present#start() abort
-  set relativenumber! number! showmode! showcmd! hidden! noruler
+  set norelativenumber nonumber noshowmode noshowcmd nohidden noruler
   set laststatus=0
   set colorcolumn=""
 

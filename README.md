@@ -27,6 +27,26 @@ Make dazzling presentations without leaving your best editor, Vim.
   autocmd BufNewFile,BufRead *.pres :Dazzle
   ```
 
+### Features and Maps
+
+- Scroll between slides using `Left` and `Right` arrow keys
+- Text between two backticks `` ` `` is treated as special text and thus, is colored 🍎
+- Text between two asterisks `*` is treated as important text and thus, is **bold**
+- `[ ]` and `[x]` are converted to ASCII characters
+- Lines starting with `*` or `-` are converted to ASCII bullet points
+- `Q` executes the current line as a shell command and prints the output into Vim
+- `<leader>t` converts current line into ASCII title using `figlet`
+- `<leader>b` converts current line into ASCII banner using `toilet`
+- `<leader>c` converts current line into ASCII cow quote using `cowsay`
+
+### Credits
+
+I made this plugin after watching those two YouTube videos:
+  - [Creating technical presentations with VIM](https://www.youtube.com/watch?v=GDa7hrbcCB8)
+  - [Giving a Text Based Slide Presentation in Vim without Plugins](https://www.youtube.com/watch?v=7fIR55kkTwc)
+
+So all thanks to their creators for their content.
+
 ### License
 
 See [LICENSE](https://github.com/aonemd/dazzle.vim/blob/master/LICENSE).

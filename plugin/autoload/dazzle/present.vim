@@ -35,13 +35,15 @@ function! dazzle#present#start() abort
   set conceallevel=2
   set concealcursor=nc
 
-  syn region ColoredText matchgroup=coloredTag start="`" end="`" concealends
-  syn region BoldText    matchgroup=boldTag    start="*" end="*" concealends
+  syn region ColoredText matchgroup=coloredTag start="`"         end="`" concealends
+  syn region HeadText    matchgroup=HeadText   start="^\s*#\+.*" end="$"
+  syn region BoldText    matchgroup=boldTag    start="*"         end="*" concealends
   syntax match BulletPoint /^\s*[\*-]/ms=e conceal cchar=•
   syntax match BackTick /\[ \]/ms=s+1,me=e-1 conceal cchar=✗
   syntax match BackTick /\[x\]/ms=s+1,me=e-1 conceal cchar=✓
 
   hi def link ColoredText Special
+  hi def link HeadText Statement
   hi BoldText cterm=bold gui=bold
 
 
